@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadUserData()">
+  <div class="container">
+    <h2>🎉 Welcome, <span id="name"></span></h2>
+
+    <p><strong>👨‍💼 Intern Code:</strong> <span id="code">--</span></p>
+    <p><strong>💸 Total Donations Raised:</strong> ₹<span id="amount">--</span></p>
+
+    <h3>🏆 Rewards & Unlockables</h3>
+    <ul>
+      <li>🥉 Bronze Tier – ₹1,000 Raised</li>
+      <li>🥈 Silver Tier – ₹5,000 Raised</li>
+      <li>🥇 Gold Tier – ₹10,000 Raised</li>
+      <li>💎 Diamond Tier – ₹20,000 Raised</li>
+    </ul>
+
+    <a href="leaderboard.html">🏁 View Leaderboard</a>
+  </div>
+
+  <script src="script.js">
+    const savedName = localStorage.getItem("internName") || data.name;
+document.getElementById('name').innerText = savedName;
+
+  </script>
+</body>
+</html>

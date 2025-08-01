@@ -1,0 +1,12 @@
+{
+  "user": {
+    "name": "Hasan Qureshi",
+    "referral_code": "hasan2025",
+    "amount_raised": 12500
+  },
+  "leaderboard": [
+    { "name": "Hasan", "referral_code": "hasan2025", "amount_raised": 12500 },
+    { "name": "Riya", "referral_code": "riya2025", "amount_raised": 9800 },
+    { "name": "Aman", "referral_code": "aman2025", "amount_raised": 7500 }
+  ]
+}

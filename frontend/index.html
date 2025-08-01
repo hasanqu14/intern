@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🚀 Welcome Intern</h2>
+
+    <div id="form">
+      <input type="text" placeholder="Full Name" id="name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+
+      <button onclick="goToDashboard()">Continue</button>
+
+      <p class="note">This is a dummy form. No authentication required.</p>
+    </div>
+  </div>
+
+  <script>
+    function goToDashboard() {
+      // Save dummy name to localStorage for display
+      const name = document.getElementById("name").value || "Intern";
+      localStorage.setItem("internName", name);
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
